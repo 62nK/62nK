@@ -1,0 +1,47 @@
+<script src="scripts/methods.js"></script>
+<script type="text/javascript">checkAuth()</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="stylesheets/signin.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<title>OMe - Sign In</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+</head>
+
+<body onload="" id="body">
+	<div class="login">
+		<img src="images/ome_logo.png">
+		<p class="welcome">Hello!</p>
+		<p>To continue, first enter your e-mail and password </p>
+		<form >
+	    
+		    <div class="group">      
+		      <input type="e-mail" id="loginEmail" required>
+		      <span class="highlight"></span>
+		      <span class="bar"></span>
+		      <label>E-Mail address</label>
+		    </div>
+		      
+		    <div class="group">      
+		      <input type="password" id="loginPassword" required>
+		      <span class="highlight"></span>
+		      <span class="bar"></span>
+		      <label>Password</label>
+		    </div>
+		    <button type="submit" value="Submit" class="btn ripple-effect" id="SignIn">Sign In</button>	
+	 	</form>	
+	 	<p><a href="signup.html" target="_self">Create new account?</a></p>
+	 	<!-- <button type="submit" form="form" value="Submit" class="btn ripple-effect">Log In</button>	 -->
+	</div>
+	<!-- Include Firebase Library -->
+	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Firebase jQuery libraries -->
+	<script src="scripts/firebaseConfig.js"></script>
+	<script src="scripts/firebaseReferences.js"></script>
+	<script src="scripts/firebaseSignIn.js"></script>
+</body>
+</html>

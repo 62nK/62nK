@@ -1,0 +1,62 @@
+<script src="scripts/methods.js"></script>
+<!-- <script type="text/javascript">checkAuth()</script> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="stylesheets/signup.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<title>OMe - Sign Up</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body onload="" id="body">
+	<div class="login">
+		<i class="material-icons">account_circle</i>
+		<p class="welcome">Hello New User!</p>
+		<p>Please enter your name, e-mail and password </p>
+		<form >
+	    
+		    <div class="group">      
+		      <input type="name" id="firstname" required>
+		      <span class="highlight"></span>
+		      <span class="bar"></span>
+		      <label>First Name</label>
+		    </div>
+
+		    <div class="group">      
+		      <input type="e-name" id="lastname" required>
+		      <span class="highlight"></span>
+		      <span class="bar"></span>
+		      <label>Last Name</label>
+		    </div>
+
+		    <div class="group">      
+		      <input type="e-name" id="signUpEmail" required>
+		      <span class="highlight"></span>
+		      <span class="bar"></span>
+		      <label>E-Mail address</label>
+		    </div>
+
+		    <div class="group">      
+		      <input type="password" id="signUpPassword" required>
+		      <span class="highlight"></span>
+		      <span class="bar"></span>
+		      <label>Password</label>
+		    </div>
+
+		    <button type="submit" value="Submit" class="btn ripple-effect" id="SignUp">Sign up</button>	
+	 	</form>	
+	 	<!-- <button type="submit" form="form" value="Submit" class="btn ripple-effect">Log In</button>	 -->
+	</div>
+	<!-- Include Firebase Library -->
+	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Firebase jQuery libraries -->
+	<script src="scripts/firebaseConfig.js"></script>
+	<script src="scripts/firebaseReferences.js"></script>
+	<script src="scripts/firebaseSignUp.js"></script>
+</body>
+</html>

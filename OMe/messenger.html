@@ -1,0 +1,91 @@
+<script src="scripts/methods.js"></script>
+<script type="text/javascript">confirmAuth()</script>	<!-- enable this when you go online -->
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="stylesheets/messenger.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<title>OMe - Online Messaging</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Include Firebase Library -->
+	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Contacts Store JavaScript -->
+	<!-- Firebase jQuery libraries -->
+	<script src="scripts/firebaseConfig.js"></script>
+	<script src="scripts/firebaseReferences.js"></script>
+	<script src="scripts/firebaseMessaging.js"></script>
+	<script src="scripts/firebaseSignOut.js"></script>
+	<script src="scripts/jQueryLibraries.js"></script>
+
+</head>
+<body>
+	<div class="titlebar">
+		<img src="images/ome_logo.png">
+		<input autocomplete="off" type="text" class="searchBox" placeholder="Search..."/>
+		<div class="options">
+			<input type="submit" value="Sign Out" id="SignOut"/>
+		</div>
+
+	</div>
+	<div class="widgetbar">
+		
+		<form action="">
+			<label><input type="radio" name="displayWindow" value="message"/><i class="material-icons">message</i></label><br>
+			<label><input type="radio" name="displayWindow" value="account"/><i class="material-icons">account_circle</i></label><br>
+			<label><input type="radio" name="displayWindow" value="settings"/><i class="material-icons">settings</i></label><br>
+		</form>
+
+	</div>
+	<div class="conversations">
+		<div class="list">			
+			<form action="" class="form" id="showConversation">
+				<label class="top">
+					<input type="radio" name="displayConversation" value="newConversation"/>
+					<i class="material-icons">message</i>
+					<p class=sender>Send a message...</p>
+				</label>
+
+				<!-- List of Conversations is appended here using jQuery -->
+
+			</form>
+			
+		</div>
+	</div>
+	<div class="content">
+		<div class="header">
+			<p class="userinfo"></p>
+			<div class="contacts">
+				<input autocomplete="off" class="searchContact" type="text" placeholder="Type a name..." id="searchContact"/>
+
+				<ul class="contactList">
+
+					<!-- List of Contacts is appended here using jQuery -->
+
+				</ul>
+			</div>
+			<img class="usericon" src="images/user.png">
+			
+		</div>
+		<div class="body-of-conversation">
+			<div class="welcome">Hi!</div>
+			<div class="convo" id="convo">
+				
+				<!-- Chat is appended here using jQuery -->
+
+			</div>
+		</div>
+		<div class="message">
+			<form name="newMessageForm">
+			  <!-- <input type="text" name="message" class="type" placeholder="type a message..."> -->
+			  <textarea id="message" class="type" placeholder="Type a message..."></textarea>
+			  <input type="image" class="send" src="images/send.png" id="sendMessage">
+			</form> 
+
+		</div>
+	</div>
+</body>
+</html>
